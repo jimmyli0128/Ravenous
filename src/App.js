@@ -3,8 +3,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import BusinessList from './components/BusinessList/BusinessList.js';
-import SearchBar from './components/SearchBar';
-import './Business.css';
+import SearchBar from './components/SearchBar/SearchBar.js';
 
 
 const business = {imageSrc: 'https://s3.amazonaws.com/codecademy-content/programs/react/ravenous/pizza.jpg',
@@ -31,7 +30,7 @@ class App extends Component {
     return <div className="App">
              <h1>ravenous</h1>
              <SearchBar />
-             <BusinessList props = {businesses}/>
+             <BusinessList business = {businesses}/>
            </div>
   }
 }
